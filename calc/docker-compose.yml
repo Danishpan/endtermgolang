@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  client-service:
+    restart: always
+    ports:
+    - 4000:4000
+    build:
+      calc_client/
+
+   server-service:
+     restart: always
+       ports:
+         - 4000:4000
+       build:
+         calc_server/
